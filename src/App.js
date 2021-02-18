@@ -1,12 +1,13 @@
-import "./styles.css";
+import wixAnimations from "wixAnimations";
+import wixWindow from "wix-window";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
+const slider01Timeline = wixAnimations.timeline({ repeat: -1 });
+const slider02Timeline = wixAnimations.timeline();
 
-console.log("gaga");
+let logoExpand = wixAnimations.timeline();
+let editorXlogoExpand = wixAnimations.timeline();
+
+let fadeOptions = {
+  duration: 300,
+  delay: 0
+};
